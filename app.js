@@ -1,5 +1,14 @@
-const names = Array.from({ length: 50 }, (_, index) => `Name ${index + 1}`);
+const allNames = [
+    'Ava', 'Liam', 'Mia', 'Noah', 'Emma', 'Lucas', 'Sophia', 'Mason', 'Olivia', 'Ethan',
+    'Isabella', 'James', 'Charlotte', 'Benjamin', 'Amelia', 'Henry', 'Harper', 'Alexander', 'Evelyn', 'Daniel',
+    'Abigail', 'Michael', 'Ella', 'Matthew', 'Scarlett', 'Joseph', 'Grace', 'Samuel', 'Chloe', 'David',
+    'Lily', 'Gabriel', 'Zoe', 'Christopher', 'Nora', 'Anthony', 'Aria', 'Andrew', 'Mila', 'Joshua',
+    'Layla', 'John', 'Hannah', 'Ryan', 'Stella', 'Kevin', 'Aurora', 'Nathan', 'Paisley', 'Isaac',
+    'Ruby', 'Thomas', 'Elena', 'Leo', 'Bella', 'Wyatt', 'Lucy', 'Julian', 'Alice', 'Hudson'
+];
 
-names.forEach((name) => {
+const randomNames = [...allNames].sort(() => Math.random() - 0.5).slice(0, 50);
+
+randomNames.forEach((name) => {
     console.log(name);
 });
